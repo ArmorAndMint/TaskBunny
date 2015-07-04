@@ -1,11 +1,11 @@
 (function(){
 
-angular.module('trApp', ['ngRoute'])
+angular.module('trApp', ['ui.router'])
   .run(function ($rootScope, $location, AuthService) {
     $rootScope.$on('$routeChangeStart', function (evt, next, current) {
 
       //ignore arriving at root path
-      if (next.$$route.originalPath === "") {
+      if (next.$$route.originalPath === '') {
         return;
       }
 
@@ -19,14 +19,14 @@ angular.module('trApp', ['ngRoute'])
       return {
           response: function(response){
               if (response.status === 401) {
-                  console.log("Response 401");
+                  console.log('Response 401');
                   $location.path('/sign-in');
               }
               return response || $q.when(response);
           },
           responseError: function(rejection) {
               if (rejection.status === 401) {
-                  console.log("Response Error 401",rejection);
+                  console.log('Response Error 401',rejection);
                   $location.path('/sign-in');
               }
               return $q.reject(rejection);

@@ -1,12 +1,12 @@
 (function(){
 
 angular.module('trApp')
-    .controller('TaskViewController', ['$scope', '$location', '$routeParams', 'TaskService', TaskViewController]);
+    .controller('TaskViewController', ['$scope', '$location', '$stateParams', 'TaskService', TaskViewController]);
 
-  function TaskViewController($scope, $location, $routeParams, TaskService){
+  function TaskViewController($scope, $location, $stateParams, TaskService){
 
     // get task _id from $rootParams
-    var _id = $routeParams.id;
+    var _id = $stateParams.id;
 
     $scope.editMode = false;
 

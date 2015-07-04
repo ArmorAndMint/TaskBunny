@@ -450,6 +450,29 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+/* Custom CSS - symmes */
+.main-view {
+  float: left;
+  margin-left: 5px;
+  width: 65%;
+}
+  
+.view-block-aside {
+  float: right;
+  width: 30%;
+  height: 200px;
+  padding: 5px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #122;
+  border: 5px solid orange;
+  border-radius: 15px;
+}
+
+.view-block-aside > a {
+  display: block;
+}
 
 /* ==========================================================================
 Buttons

@@ -1,0 +1,8 @@
+<div ng-include="'app/shared/navbar/navbar.html'"> </div>
+<div>
+  <div ui-view class="main-view"></div>
+  <aside class="view-block-aside">
+    <a ui-sref=".manage">Overview</a>
+    <a ui-sref=".view({id: task._id})" ng-repeat="task in createdTasks">{{task.information.description}}</a>
+  </aside>
+</div>
