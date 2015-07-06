@@ -48,15 +48,15 @@
   </div>
 </section>
 <aside class="filters">
-  <h5>My Tasks</h5>
-  <a ng-click="setTaskList('created')">Created</a>
-  <a ng-click="setTaskList('open')">Open</a>
-  <a ng-click="setTaskList('pending')">Pending</a>
-  <a ng-click="setTaskList('myReady')">Ready</a>
-  <a ng-click="setTaskList('myCompleted')">Complete</a>
+  <h5>My Tasks </h5>
+  <a ng-click="setTaskList('created')">All: {{createdTasks.length}}</a>
+  <a ng-click="setTaskList('open')">Open: {{openTasks.length}}</a>
+  <a ng-click="setTaskList('pending')">Pending: {{pendingTasks.length}}</a>
+  <a ng-click="setTaskList('myReady')">Ready: {{myReadyTasks.length}}</a>
+  <a ng-click="setTaskList('myCompleted')">Complete: {{myCompletedTasks.length}}</a>
   <h5>Other Tasks</h5>
-  <a ng-click="setTaskList('applied')">Applied for</a>
-  <a ng-click="setTaskList('assigned')">Assigned to me</a>
-  <a ng-click="setTaskList('ready')">Ready</a>
-  <a ng-click="setTaskList('iCompleted')">Confirmed</a>
+  <a ng-click="setTaskList('applied')">Applied for: {{appliedTasks.length}}</a>
+  <a ng-click="setTaskList('assigned')">Assigned to me: {{assignedTasks.length}}</a>
+  <a ng-click="setTaskList('ready')">Ready: {{readyTasks.length}}</a>
+  <a ng-click="setTaskList('iCompleted')">Confirmed: {{iCompletedTasks.length}}</a>
 </aside>
