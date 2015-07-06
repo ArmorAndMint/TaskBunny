@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/skeleton.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <div class="container">
+
+        <!-- NAVIGATION -->
+
+        <div class="row">
+            <img src="images/logo.svg" class="five columns" alt="logo" id="logo"/>
+           <nav class="nav">
+            <ul class="six columns" >
+                <li><a href="#" id="findTasks">Find</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Settings</a></li>
+                <button class="blue-btn" id="top_margin">Sign Out</button>
+            </ul>
+           </nav>
+        </div>
+
+       <!-- SPACER -->
+
+        <div class="row my_tasks">
+
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+        <div class="row">
+            <div class="nine columns">
+
+                <!-- FIRST EXAMPLE TASK CONTENT -->
+
+                <div class="content">
+                    <div class="row">
+                            <h6 class="completed two columns">Completed</h6>
+                            <h6 class="taskTitle eight columns">Finish Task Bunny </h6>
+                            <h6 class="fee one columns">$100</h6>
+                    </div>
+                    <div class="row">
+                        <h6 class="completed two columns"></h6>
+                        <h6 class="location seven columns">San Francisco, CA </h6>
+                        <h6 class="date two columns">June 29, 2015</h6>
+                    </div>
+                    <div class="row">
+                        <img src="images/line.svg" alt="" class="line tweleve columns"/>
+                    </div>
+                    <div class="row">
+                        <h6 class="descriptionTitle">Description</h6>
+                        <p class="description">Project Description would go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Project Description would go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod t</p>
+                    </div>
+                    <div class="row">
+                        <h6 class="descriptionTitle">Due Date: July 2, 2015</h6>
+                    </div>
+                    <div class="row">
+                        <h6 class="descriptionTitle">Applicants</h6>
+                    </div>
+                    <div class="row">
+                        <ul class="four columns applicantList">
+                            <li>Sean </li>
+                            <li>Michael </li>
+                            <li>Billy</li>
+                            <li>John</li>
+                            <li>Mokhtar</li>
+                            <li>Liz</li>
+                            <li>Illy</li>
+                            <li>Spidy</li>
+                        </ul>
+                        <button class="rate-btn">Rate</button>
+                        <button class="payment-btn">Payment Sent</button>
+                    </div>
+                </div>
+
+                <!-- SECOND EXAMPLE TASK CONTENT -->
+
+                <div class="content">
+                    <div class="row">
+                        <h6 class="completed two columns">Completed</h6>
+                        <h6 class="taskTitle eight columns">Another Task Here </h6>
+                        <h6 class="fee one columns">$50</h6>
+                    </div>
+                    <div class="row">
+                        <h6 class="completed two columns"></h6>
+                        <h6 class="location seven columns">San Francisco, CA </h6>
+                        <h6 class="date two columns">June 29, 2015</h6>
+                    </div>
+                    <div class="row">
+                        <img src="images/line.svg" alt="" class="line tweleve columns"/>
+                    </div>
+                    <div class="row">
+                        <h6 class="descriptionTitle">Description</h6>
+                        <p class="description">Project Description would go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                            Project Description would go here. Lorem ipsum dolor</p>
+
+                    </div>
+                    <div class="row">
+                        <h6 class="descriptionTitle">Due Date: July 2, 2015</h6>
+                    </div>
+                    <div class="row">
+                        <h6 class="descriptionTitle">Applicants</h6>
+                    </div>
+                    <div class="row">
+                        <ul class="four columns applicantList">
+                            <li>Sean </li>
+                            <li>Michael </li>
+                            <li>Billy</li>
+                            <li>John</li>
+                            <li>Mokhtar</li>
+                            <li>Liz</li>
+                            <li>Illy</li>
+                            <li>Spidy</li>
+                        </ul>
+                        <button class="rate-btn">Rate</button>
+                        <button class="payment-btn">Payment Sent</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- RIGHT COLUMN -->
+
+            <div class="rightcolumn two columns">
+                <img src="images/my_tasks.svg" alt="my_tasks" draggable="false" id="inputAdd"/>
+                <a href="#">Created</a>
+                <a href="#">Assigned</a>
+                <a href="#">Applied</a>
+            </div>
+        </div>
+
+        <!-- MODAL FOR ADDING TASKS -->
+
+        <div class="addTaskModal">
+            <h6>Add Task Details</h6>
+            <div class="row">
+                Task Title <input type="text">
+
+            </div>
+            <div class="row">
+                <button id="closeAdd">Close</button>
+            </div>
+
+            </div>
+
+        <!-- MODAL FOR FINDING TASKS -->
+
+        <div class="findTaskModal">
+            <button id="closeFind">Close</button>
+
+        </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+<!--  ===== MODAL HANDLING SCRIPT ====  -->
+
+<script>
+    $(document).ready(function(){
+
+        /* When Add task Icon is selected show input form for adding task */
+
+        $( "#inputAdd" ).click(function() {
+            $( ".addTaskModal" ).show(300, function() {
+                // Animation complete.
+            });
+        });
+
+        /* Hide input form */
+        $("#closeAdd").click(function(){
+            $(".addTaskModal").hide(300, function() {
+
+            });
+        });
+
+        /* When find is clicked show the available tasks */
+        $( "#findTasks" ).click(function() {
+            $( ".findTaskModal" ).show(300, function() {
+                // Animation complete.
+            });
+        });
+
+        /* Hide available tasks */
+        $("#closeFind").click(function(){
+            $(".findTaskModal").hide(300, function() {
+
+            });
+        });
+
+    });
+</script>
+
+
+</html>

@@ -1,0 +1,239 @@
+h4 {
+    display: inline-block;
+}
+h3 {
+    border-bottom: 1px solid #000;
+}
+
+#logo {
+    margin-right:120px;
+}
+
+li {
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+    list-style-type: none;
+}
+a {
+
+    text-decoration: none;
+    font-family: BrandonText-Bold;
+    font-size: 18px;
+    color: #4A4A4A;
+    padding-right: 40px;
+
+}
+p,
+h6 {
+    display: inline-block;
+}
+
+.blue-btn {
+    font-family: BrandonText-Bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #1B8FF2;
+    border-radius: 8px;
+    border:none;
+    height: 34px;
+    width: 85px;
+    text-align: center;
+    padding-left: 11px;
+    margin-top:30px;
+    margin-left: 15px;
+}
+.my_tasks {
+    margin-top: 25px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+.rightcolumn {
+    text-align: center;
+    font-family: BrandonText-Bold;
+    font-size:20px;
+    color: #4A4A4A;
+    line-height: 27px;
+    float: right;
+}
+.rightcolumn img {
+    margin-left: 4px;
+}
+.rightcolumn a {
+
+}
+.content {
+    width: 530px;
+    height: 370px;
+    border: 1px solid #979797;
+    border-radius: 8px;
+    margin-left: 160px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.addTaskModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    line-height: 200px;
+    height: 600px;
+    margin-left: -300px;
+    margin-top: -250px;
+    background-color: white;
+    text-align: center;
+    border: solid grey 1px;
+    border-top: solid #1B8FF2 2px; ;
+    border-radius: 5px;
+    display: none;
+
+    /* needed styles for the overlay */
+    z-index: 10; /* keep on top of other elements on the page */
+    box-shadow: 0 0 0 9999px rgba(255, 255, 255, 0.5);
+}
+
+.findTaskModal {
+    /* some styles to position the modal at the center of the page */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    line-height: 200px;
+    height: 600px;
+    margin-left: -300px;
+    margin-top: -250px;
+    background-color: white;
+    text-align: center;
+    border: solid grey 1px;
+    border-top: solid #1B8FF2 2px; ;
+    border-radius: 5px;
+    display: none;
+
+    /* needed styles for the overlay */
+    z-index: 10; /* keep on top of other elements on the page */
+    box-shadow: 0 0 0 9999px rgba(255, 255, 255, 0.5);
+}
+.taskHeader {
+    display: inline;
+}
+.completed {
+    font-family: BrandonText-Bold;
+    font-size: 18px;
+    color: #39CE00;
+    line-height: 25px;
+    margin: 10px;
+    margin-right: 25px;
+    padding-left: 10px;
+}
+.taskTitle {
+    font-family: BrandonText-Bold;
+    font-size: 23px;
+    color: #4A4A4A;
+    padding-left:  60px;
+
+
+}
+.fee {
+    font-family: BrandonText-Bold;
+    font-size: 20px;
+    color: #4A4A4A;
+    line-height: 27px;
+    margin:10px;
+    margin-left: -10px;
+
+}
+
+.date {
+    font-family: BrandonText-Bold;
+    font-size: 10px;
+    color: #4A4A4A;
+    margin:10px;
+    margin-top: -14px;
+    margin-left: 32px;
+
+}
+.location {
+    font-family: BrandonText-Bold;
+    font-size: 15px;
+    color: #4A4A4A;
+    margin:10px;
+    text-align: center;
+    margin-top: -20px;
+}
+.line {
+    display: inline-block;
+    margin-left: -1px;
+}
+.line img {
+    margin-top: -40px;
+}
+.descriptionTitle    {
+    font-family: BrandonText-Bold;
+    font-size: 15px;
+    color: #4A4A4A;
+    margin:10px;
+    text-align: center;
+    margin-top: -20px;
+}
+.description {
+    font-family: BrandonText-Medium;
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 18px;
+    margin-left: 10px;
+}
+.applicantList {
+    font-family: BrandonText-Medium;
+    font-size: 15px;
+    color: #4A4A4A;
+    margin-top: -8px;
+}
+
+.applicantList li {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.payment-btn {
+    font-family: BrandonText-Bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #1B8FF2;
+    border-radius: 8px;
+    border:none;
+    height: 34px;
+    width: 120px;
+    text-align: center;
+    padding-left: 11px;
+    margin-top:30px;
+    margin-left: 15px;
+    margin-left: 40px;
+}
+.payment-btn:hover {
+    color:#FFFFFF;
+    background: #0c75ce;
+
+}
+.payment-btn:active {
+    color:#FFFFFF;
+    background: #1B8FF2;
+
+}
+.blue-btn:hover {
+    color: #FFFFFF;
+    background: #0c75ce;
+
+}
+.blue-btn:active {
+    color: #FFFFFF;
+
+}
+
+
+
+
+.rate-btn {
+    font-family: BrandonText-Bold;
+    font-size: 14px;
+    margin-left: 40px;
+}
+
