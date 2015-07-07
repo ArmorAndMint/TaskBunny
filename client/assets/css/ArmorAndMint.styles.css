@@ -55,6 +55,9 @@ aside.filters>a {
 .btn-default {
   background-color: #3498DB;
 }
+.btn-primary {
+  background-color: #fff;
+}
 legend, form * {
   color: #111;
 }
@@ -64,4 +67,8 @@ legend, form * {
 .info>td {
   background-color: #3498DB !important;
   color: #eee;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #3498DB;
+  color: #fff;
 }
