@@ -1,3 +1,18 @@
+body {
+  background-color: #fff;
+  color: #111;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #111;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #111;
+}
+.navbar-default {
+  background-color: #fff;
+}
+
 .cards {
   margin: 0 auto;
   width: 40%;
@@ -12,21 +27,21 @@ aside {
 }
 aside.filters>a {
   display: block;
-  color: #df691a;
+  color: #3498DB;
+  cursor: pointer;
 }
 .card {
   display: inline-block;
   width: 80%;
   margin: 5px auto;
   padding: 1em;
-  border: 3px solid #df691a;
+  border: 1px solid #3498DB;
   border-radius: 15px;
-  background-color: grey;
-  color: white;
+  background-color: #fefefe;
+  color: #111111;
 }
-.card > h5 {
+.card > h3 {
   margin: 0 auto;
-  font-size: 1em;
   text-align: center;
 }
 .card > h6 {
@@ -37,6 +52,16 @@ aside.filters>a {
 .card > ul {
   padding: 10px;
 }
-.filters > a {
-  cursor: pointer;
+.btn-default {
+  background-color: #3498DB;
+}
+legend, form * {
+  color: #111;
+}
+.form-control{
+  border-color: #aaa;
+}
+.info>td {
+  background-color: #3498DB !important;
+  color: #eee;
 }
