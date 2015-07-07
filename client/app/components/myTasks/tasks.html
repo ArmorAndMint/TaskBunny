@@ -2,7 +2,7 @@
 
 <section class="cards">
   <div class="task card" ng-repeat="task in currentTaskList | orderBy:'task.deadline'">
-    <h5>{{ task.information.name }}</h5>
+    <h3>{{ task.information.name }}</h3>
     <h6>Status: <em>{{ states[task.state] }}</em> </h6>
       <ul>
          <li>Owner: {{ task.owner.name }}</li>
@@ -13,8 +13,8 @@
          <img id="displayImage" ng-show="task.information.image" ng-src="{{ task.information.image }}" />
       </ul>
 
-      <button ng-show="task.isOwner && !task.assignedTo && task.applicants.length==0"
-        ng-click="editTask(task._id)" class="btn btn-default">Edit</button>
+      <p class="text-center"><button ng-show="task.isOwner && !task.assignedTo && task.applicants.length==0"
+        ng-click="editTask(task._id)" class="btn btn-default">Edit</button></p>
 
       <button ng-show="!task.isOwner && !task.assignedTo &&!task.appliedTo"
         ng-click="applyForTask(task._id)" class="btn btn-default">Apply</button>
@@ -48,13 +48,13 @@
   </div>
 </section>
 <aside class="filters">
-  <h5>My Tasks </h5>
+  <h3>My Tasks </h3>
   <a ng-click="setTaskList('created')">All: {{createdTasks.length}}</a>
   <a ng-click="setTaskList('open')">Open: {{openTasks.length}}</a>
   <a ng-click="setTaskList('pending')">Pending: {{pendingTasks.length}}</a>
   <a ng-click="setTaskList('myReady')">Ready: {{myReadyTasks.length}}</a>
   <a ng-click="setTaskList('myCompleted')">Complete: {{myCompletedTasks.length}}</a>
-  <h5>Other Tasks</h5>
+  <h3>Other Tasks</h3>
   <a ng-click="setTaskList('applied')">Applied for: {{appliedTasks.length}}</a>
   <a ng-click="setTaskList('assigned')">Assigned to me: {{assignedTasks.length}}</a>
   <a ng-click="setTaskList('ready')">Ready: {{readyTasks.length}}</a>
