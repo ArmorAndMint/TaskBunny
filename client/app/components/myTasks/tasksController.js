@@ -211,9 +211,9 @@ angular.module('trApp')
     // call updateTaskList once on view load
     // and again every 1.5 seconds to update tasks
     $scope.updateTaskList();
-    // $interval(function(){
-    //   $scope.updateTaskList();
-    // }, 1500);
+    $interval(function(){
+      $scope.updateTaskList();
+    }, 1500);
       
   }// end of controller function body
 })();

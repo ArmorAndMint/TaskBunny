@@ -14,7 +14,7 @@
       </ul>
 
       <p class="text-center"><button ng-show="task.isOwner && !task.assignedTo && task.applicants.length==0"
-        ng-click="editTask(task._id)" class="btn btn-default btn-sexy">Edit</button></p>
+        ng-click="editTask(task._id)" class="btn btn-default">Edit</button></p>
 
       <button ng-show="!task.isOwner && !task.assignedTo &&!task.appliedTo"
         ng-click="applyForTask(task._id)" class="btn btn-default">Apply</button>
